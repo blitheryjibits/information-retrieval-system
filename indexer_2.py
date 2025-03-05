@@ -3,7 +3,7 @@ import math
 import sqlite3 
 import time
 
-# the database is a simple dictionnary 
+# the database is a simple dictionary 
 database = {}
 
 # regular expression for: extract words, extract ID from path, check for hexa value 
@@ -488,7 +488,7 @@ if __name__ == '__main__':
     print ('Start Time: %.2d:%.2d' % (t2.tm_hour, t2.tm_min))
     #
     # The corpus of documents removed from the zipfile
-    # Provide a path to the directory containing the files to travers here
+    # Provide a path to the directory containing the files to traverse here
     # The path must be relative from the current working directory (the one shown in the terminal when running)
     # or be an absolute path
     folder = "./cacm"

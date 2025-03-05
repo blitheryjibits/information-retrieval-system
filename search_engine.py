@@ -385,7 +385,7 @@ def cosineSimilarity(docVector, qVector) :
     # calculate dot product of two vectors
     dotProduct = sum(x * y for x, y in zip(docVector, qVector))
     
-    # calculate Euclidean norm that reoresents the length of the vector in Euclidean space
+    # calculate Euclidean norm that represents the length of the vector in Euclidean space
     docVecNorm = sum(x ** 2 for x in docVector) ** 0.5
     qVecNorm = sum(x ** 2 for x in qVector) ** 0.5
     
@@ -398,7 +398,7 @@ def cosineSimilarity(docVector, qVector) :
 ================================================================================================
 >>> main
 
-This section is the 'main' or starting point o the indexer program. The python interpreter will find this 'main' routine and execute it first.
+This section is the 'main' or starting point of the indexer program. The python interpreter will find this 'main' routine and execute it first.
 ================================================================================================       """
 if __name__ == '__main__':
 
@@ -432,7 +432,7 @@ if __name__ == '__main__':
     query = newQuery
 #
 # Get the total number of documents in the collection
-    q = "select count(*) from documentdictionary"
+    q = "select count(*) from document dictionary"
     cur.execute(q)
     row = cur.fetchone()
     documents = row[0]
